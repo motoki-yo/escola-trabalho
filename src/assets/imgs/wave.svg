@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1440"
+   height="495"
+   viewBox="0 0 1440 495"
+   fill="none"
+   version="1.1"
+   id="svg34"
+   sodipodi:docname="wave.svg"
+   inkscape:version="1.1.2 (1:1.1+202202050852+0a00cf5339)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview36"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.75069444"
+     inkscape:cx="720.66605"
+     inkscape:cy="247.10453"
+     inkscape:window-width="1294"
+     inkscape:window-height="704"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6" />
+  <g
+     filter="url(#filter0_d_112_495)"
+     id="g6">
+    <path
+       d="M0 109.028C838.144 140.669 893.826 -26.1242 1440 3.92856V486.288H743H0V109.028Z"
+       fill="url(#paint0_linear_112_495)"
+       shape-rendering="geometricPrecision"
+       id="path2" />
+    <path
+       d="M1439.5 4.40184V485.788H743H0.5V109.548C419.28 125.322 642.667 91.5434 829.578 57.5657C846.063 54.5691 862.263 51.5711 878.288 48.6054C1043.91 17.9544 1190.84 -9.23597 1439.5 4.40184Z"
+       stroke="black"
+       shape-rendering="crispEdges"
+       id="path4"
+       style="stroke:none" />
+  </g>
+  <defs
+     id="defs32">
+    <filter
+       id="filter0_d_112_495"
+       x="-4"
+       y="0.287567"
+       width="1448"
+       height="494"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood8" />
+      <feColorMatrix
+         in="SourceAlpha"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         result="hardAlpha"
+         id="feColorMatrix10" />
+      <feOffset
+         dy="4"
+         id="feOffset12" />
+      <feGaussianBlur
+         stdDeviation="2"
+         id="feGaussianBlur14" />
+      <feComposite
+         in2="hardAlpha"
+         operator="out"
+         id="feComposite16" />
+      <feColorMatrix
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+         id="feColorMatrix18" />
+      <feBlend
+         mode="normal"
+         in2="BackgroundImageFix"
+         result="effect1_dropShadow_112_495"
+         id="feBlend20" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="effect1_dropShadow_112_495"
+         result="shape"
+         id="feBlend22" />
+    </filter>
+    <linearGradient
+       id="paint0_linear_112_495"
+       x1="720"
+       y1="0.287567"
+       x2="720"
+       y2="486.288"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#00853B"
+         id="stop25" />
+      <stop
+         offset="0.333333"
+         stop-color="#00853B"
+         id="stop27" />
+      <stop
+         offset="1"
+         stop-color="#82C39F"
+         stop-opacity="0.706383"
+         id="stop29" />
+    </linearGradient>
+  </defs>
+</svg>
