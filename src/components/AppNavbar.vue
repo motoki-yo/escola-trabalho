@@ -7,9 +7,9 @@
     </div>
 
     <ul class="nav-links">
-      <li><a href="#" target="_blank">Página Inicial</a></li>
-      <li><a href="#" target="_blank">Materiais</a></li>
-      <li><a href="#" target="_blank">Sobre</a></li>
+      <li><router-link :to="{ name: 'PaginaInicial'}" >Página Inicial</router-link></li>
+      <li><router-link :to="{ name: '404'}"      >Materiais</router-link></li>
+      <li><router-link :to="{ name: '404'}"      >Sobre</router-link></li>
 
       <div class="nav-btns" v-if="show">
         <button id="btn-data" class="btn-gradient" @click="show = !show">Dados</button>
@@ -17,7 +17,7 @@
 
         <a class="profile-icon dropdown" href="#" target="_blank">
           <div class="profile dropdown-btn">
-            <img src="@/assets/imgs/user-icon.svg">
+            <img src="@/assets/images/user-icon.svg">
             <span>{{ userName }}</span> <i class="arrow down"></i>
           </div>
             <div class="dropdown-content">
@@ -37,6 +37,47 @@
 
     </ul>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md fixed-top bg-light navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"
+        ><img
+          id="MDB-logo"
+          src="https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png"
+          alt="MDB Logo"
+          draggable="false"
+          height="30"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#!"><i class="fas fa-plus-circle pe-2"></i>Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i>Alerts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#!"><i class="fas fa-heart pe-2"></i>Trips</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-black btn-rounded" href="#!">Sign in</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
 
 
   </div>

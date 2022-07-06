@@ -18,20 +18,20 @@
 
         <div class="img-slide">
           <div class="filter"></div>
-          <img src="@/assets/imgs/img1.png">
+          <img src="@/assets/images/img1.png">
         </div>
       </div>
     </div>
 
     <div class="wave-container">
-      <img src="@/assets/imgs/wave.svg">
+      <img src="@/assets/images/wave.svg">
 
       <section class="text">
         <h1>OBJETIVO</h1>
         <p>O projeto tem o objetivo de ...</p>
       </section>
 
-      <img id="decorator" src="@/assets/imgs/img-just-getting-started-bg.png">
+      <img id="decorator" src="@/assets/images/img-just-getting-started-bg.png">
     </div>
     
 
@@ -71,7 +71,7 @@
       <div class="card-container">
         <div class="card-mask">
           <a href="#">
-            <img src="@/assets/imgs/card-img.png" alt="Placeholder image"> 
+            <img src="@/assets/images/card-img.png" alt="Placeholder image"> 
             <div class="card-gradient">
               <p class="card-text">O projeto tem o objetivo de...</p>
             </div>
@@ -80,7 +80,7 @@
 
         <div class="card-mask">
           <a href="#">
-            <img src="@/assets/imgs/card-img.png" alt="Placeholder image"> 
+            <img src="@/assets/images/card-img.png" alt="Placeholder image"> 
             <div class="card-gradient">
               <p class="card-text">O projeto tem o objetivo de...</p>
             </div>
@@ -89,7 +89,7 @@
 
         <div class="card-mask">
           <a href="#">
-            <img src="@/assets/imgs/card-img.png" alt="Placeholder image"> 
+            <img src="@/assets/images/card-img.png" alt="Placeholder image"> 
             <div class="card-gradient">
               <p class="card-text">O projeto tem o objetivo de...</p>
             </div>
@@ -98,7 +98,7 @@
 
         <div class="card-mask">
           <a href="#">
-            <img src="@/assets/imgs/card-img.png" alt="Placeholder image"> 
+            <img src="@/assets/images/card-img.png" alt="Placeholder image"> 
             <div class="card-gradient">
               <p class="card-text">O projeto tem o objetivo de...</p>
             </div>
@@ -390,7 +390,7 @@
 
 <script>
 export default {
-  name: 'HomeContent',
+  name: 'PaginaInicial',
   /*props: {
     msg: String
   }*/

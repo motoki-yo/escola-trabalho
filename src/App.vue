@@ -1,20 +1,18 @@
 <template>
-  <AppNavbar />
-  <HomeContent />
-  <AppFooter/>
+  <app-navbar />
+  <router-view />
+  <app-footer />
 </template>
 
 <script>
-import HomeContent from './components/HomeContent.vue'
-import AppNavbar from './components/AppNavbar.vue'
-import AppFooter from './components/AppFooter.vue'
+import AppNavbar from '@/components/AppNavbar.vue'
+import AppFooter from '@/components/AppFooter.vue'
 
 export default {
   name: 'App',
   components: {
     AppNavbar,
     AppFooter,
-    HomeContent
   }
 }
 </script>

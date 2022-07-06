@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------
+Project: Escola-trabalho
+Version:  
+Last change:  
+Primary use: 
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[LAYOUT]
+
+* body
+  + Header / header
+  + Page Content / .page-content .name-page
+        + Section Layouts / section .name-section
+        ...
+  + Footer / footer
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[COLOR CODES]
+
+# Text Color      :  
+# Primary Color 01:  
+# Primary Color 02:   
+# Primary Color 03:  
+
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[TYPOGRAPHY]
+
+Body            : 16px/1.6 '', Arial, sans-serif;
+Title           : 18px/1.6 '', Arial, sans-serif;
+Paragrap        : 18px/1.6 '', Arial, sans-serif;
+Input, textarea : 14px/1.6 '', Arial, sans-serif;
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+Table of contents
+------------------------------------------------
+1. Typography [ FONT ]
+2. General [ see util.css ]
+3. Nav [ NAVBAR ]
+4. Footer [ FOOTER ]
+------------------------------------------------------------------*/
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Light;
+    src: url('../fonts/Poppins/Poppins-Light.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-ExtraLight;
+    src: url('../fonts/Poppins/Poppins-ExtraLight.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/Poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Italic;
+    src: url('../fonts/Poppins/Poppins-Italic.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf'); 
+  }
+  
+  
+  /*---------------------------------------------*/
+  @font-face {
+    font-family: PlayfairDisplay-Regular;
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf'); 
+  }
+  
+  /*---------------------------------------------*/
+

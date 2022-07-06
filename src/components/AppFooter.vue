@@ -6,9 +6,9 @@
         <p>O projeto escola trabalho foi idealizado pelas seguintes organizações :</p>
       </section>
       <ul>
-        <li><a href="#"><img src="@/assets/imgs/logo-lepes.png"></a></li>
-        <li><a href="#"><img src="@/assets/imgs/logo-itau.png"></a></li>
-        <li><a href="#"><img src="@/assets/imgs/logo-move.png"></a></li>
+        <li><a href="#"><img src="@/assets/images/logo-lepes.png"></a></li>
+        <li><a href="#"><img src="@/assets/images/logo-itau.png"></a></li>
+        <li><a href="#"><img src="@/assets/images/logo-move.png"></a></li>
       </ul>
     </div>
 
@@ -141,7 +141,7 @@
   }
 
   input[type="email"]{
-    background: url(../assets/imgs/email-icon.svg) no-repeat scroll 10px 15px;
+    background: url(../assets/images/email-icon.svg) no-repeat scroll 10px 15px;
     padding-left:40px;
   }
   
