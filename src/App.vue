@@ -1,7 +1,9 @@
 <template>
-  <app-navbar />
-  <router-view />
-  <app-footer />
+  <MDBContainer>
+    <app-navbar />
+      <router-view />
+    <app-footer />
+  </MDBContainer>
 </template>
 
 <script>

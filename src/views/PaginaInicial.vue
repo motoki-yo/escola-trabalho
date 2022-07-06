@@ -1,29 +1,84 @@
 <template>
-  <div class="home-content">
+  <div>
 
-    <!-- Slideshow will be implement later !-->
-    <div class="slideshow-container">
-      <div class="slide">
-        <div class="slide-caption">
-          <div class="text">Acompanhe os dados do formulário da transição</div>
-          <button class="btn-gradient">Call to action</button>
-
-          <div class ="dot-container">
-            <span class="dot"></span>
-            <span class="dot dot-active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-
-        <div class="img-slide">
-          <div class="filter"></div>
-          <img src="@/assets/images/img1.png">
-        </div>
-      </div>
+  <!-- Carousel wrapper -->
+  <div id="carouselMaterialStyle" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
-    <div class="wave-container">
+    <!-- Inner -->
+    <div class="carousel-inner shadow-4-strong">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100"
+          alt="Sunset Over the City" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Acompanhe os dados do formulário da transição</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <router-link class="nav-link" :to="{ name: '404'}" >
+            <button type="button" class="btn gradient-custom">Call to action</button>
+          </router-link>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100"
+          alt="Canyon at Nigh" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <router-link class="nav-link" :to="{ name: '404'}" >
+            <button type="button" class="btn gradient-custom">Call to action 2</button>
+          </router-link>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100"
+          alt="Cliff Above a Stormy Sea" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <router-link class="nav-link" :to="{ name: '404'}" >
+            <button type="button" class="btn gradient-custom">Call to action 3</button>
+          </router-link>
+        </div>
+      </div>
+
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+    <!-- <div class="wave-container">
+      <svg
+        class="position-absolute"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="left: 0; bottom: 0"
+        >
+      <path
+            fill="#"
+            d="M 0 297.33 L 1440 183.98 L 1440 320 L 0 320 Z"
+            ></path>
+      </svg>
       <img src="@/assets/images/wave.svg">
 
       <section class="text">
@@ -32,368 +87,170 @@
       </section>
 
       <img id="decorator" src="@/assets/images/img-just-getting-started-bg.png">
-    </div>
+    </div> -->
     
 
-    <div class="project-metrics">
-      <section class="text">
-        <h1>MÉTRICAS DO PROJETO</h1>
-        <p>O que já atingimos com o projeto</p>
-      </section>
+    <!--Main layout-->
+    <main class="mt-5">
+        <div class="container">
 
-      <div class="metric-container">
-        <div class="metric-item">
-          <h1>50<span>+</span></h1>
-          <h2>?</h2>
-          <h3>?</h3>
+            <!--Section: Métricas do Projeto-->
+            <section id="metricas">
+
+                <!-- Heading -->
+                <h1 class="font-weight-bold">Métricas do projeto</h1>
+                <!-- Description -->
+                <p class="grey-text">O que já atingimos com o projeto</p>
+
+                <!--Grid row-->
+                <div class="row text-center project-metrics p-2">
+
+                    <!--Grid column-->
+                    <div class="col-md-4 my-5">
+                        <h2 class="font-weight-bold">54<span style="color:#00853B;">+</span></h2>
+                        <h4 class="my-4 font-weight-bold">?</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 my-5">
+                        <h2 class="font-weight-bold">9,2<span style="color:#00853B;">+</span></h2>
+                        <h4 class="my-4 font-weight-bold">?</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+                    
+                    <!--Grid column-->
+                    <div class="col-md-4 my-5">
+                        <h2 class="font-weight-bold">71<span style="color:#00853B;">%</span></h2>
+                        <h4 class="my-4 font-weight-bold">?</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Métricas do Projeto-->
+
+            <hr class="my-5">
+
         </div>
-        <div class="divider"></div>
-        <div class="metric-item">
-          <h1>9,2<span>+</span></h1>
-          <h2>?</h2>
-          <h3>?</h3>
-        </div>
-        <div class="divider"></div>
-        <div class="metric-item">
-          <h1>71<span>%</span></h1>
-          <h2>?</h2>
-          <h3>?</h3>
-        </div>
-      </div>
+         <div class="container">
+
+        <!--Section: Publicações e Conteúdos-->
+        <section id="publicacoes">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold">CONTEÚDO</h1>
+            <!-- Description -->
+            <p class="grey-text">Nossas publicações e conteúdos</p>
+
+            <!--Grid row-->
+            <div class="d-flex">
+              
+              <!--Card-->
+              <div class="p-2 flex-shrink-1">
+                <div class="card bg-dark text-white"> 
+                  <img src="@/assets/images/card-img.png" class="card-img" alt="Card"/>
+                  <div class="card-img-overlay card-hover-overlay d-flex align-items-end">
+                    <div>
+                      <hr>
+                      <h5 class="card-title">Escola-trabalho</h5>
+                      <p class="card-text">
+                        O projeto tem o objetivo de ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card-->
+                
+              <!--Card-->
+              <div class="p-2 flex-shrink-1">
+                <div class="card bg-dark text-white"> 
+                  <img src="@/assets/images/card-img.png" class="card-img" alt="Card"/>
+                  <div class="card-img-overlay card-hover-overlay d-flex align-items-end">
+                    <div>
+                      <hr>
+                      <h5 class="card-title">Escola-trabalho</h5>
+                      <p class="card-text">
+                        O projeto tem o objetivo de ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card-->
+
+
+              <!--Card-->
+              <div class="p-2 flex-shrink-1">
+                <div class="card bg-dark text-white"> 
+                  <img src="@/assets/images/card-img.png" class="card-img" alt="Card"/>
+                  <div class="card-img-overlay card-hover-overlay d-flex align-items-end">
+                    <div>
+                      <hr>
+                      <h5 class="card-title">Escola-trabalho</h5>
+                      <p class="card-text">
+                        O projeto tem o objetivo de ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card-->
+
+              <!--Card-->
+              <div class="p-2 flex-shrink-1">
+                <div class="card bg-dark text-white"> 
+                  <img src="@/assets/images/card-img.png" class="card-img" alt="Card"/>
+                  <div class="card-img-overlay card-hover-overlay d-flex align-items-end">
+                    <div>
+                      <hr>
+                      <h5 class="card-title">Escola-trabalho</h5>
+                      <p class="card-text">
+                        O projeto tem o objetivo de ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card-->
+
+            </div>
+            <!-- Container -->
+
+        </section>
+      <!--Section: Publicações e Conteúdos-->
+
+        <hr class="my-5">
+
     </div>
+    </main>
+    <!--Main layout-->
 
-    <div class="content-cards">
-      <section class="text">
-        <h1>CONTEÚDO</h1>
-        <p>Nossas publicações e conteúdos</p>
-      </section>
-
-      <div class="card-container">
-        <div class="card-mask">
-          <a href="#">
-            <img src="@/assets/images/card-img.png" alt="Placeholder image"> 
-            <div class="card-gradient">
-              <p class="card-text">O projeto tem o objetivo de...</p>
-            </div>
-            </a>
-        </div>
-
-        <div class="card-mask">
-          <a href="#">
-            <img src="@/assets/images/card-img.png" alt="Placeholder image"> 
-            <div class="card-gradient">
-              <p class="card-text">O projeto tem o objetivo de...</p>
-            </div>
-            </a>
-        </div>
-
-        <div class="card-mask">
-          <a href="#">
-            <img src="@/assets/images/card-img.png" alt="Placeholder image"> 
-            <div class="card-gradient">
-              <p class="card-text">O projeto tem o objetivo de...</p>
-            </div>
-            </a>
-        </div>
-
-        <div class="card-mask">
-          <a href="#">
-            <img src="@/assets/images/card-img.png" alt="Placeholder image"> 
-            <div class="card-gradient">
-              <p class="card-text">O projeto tem o objetivo de...</p>
-            </div>
-            </a>
-        </div>
-      </div>
-    </div>
-  
   </div>
 </template>
 
 <style scoped>
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-
-  *{
-    font-family: 'Poppins', sans-serif;
-    
-    font-style: normal;
-    font-weight: 600;
-
-    line-height: 100%;
-  }
-
-  .slide-caption{
-    position: absolute;
-    z-index: 2;
-  }
-
-  .img-slide{
-    width: 100%;
-    height: 500px;
-  }
-
-  .img-slide img{
-    width: 100%;
-    height: 500px;
-  }
-
-  .filter{
-    position: absolute;
-    width: 833px;
-    height: 500px;
-    z-index: 1;
-    background: linear-gradient(90.98deg, #FFFFFF 27.03%, rgba(255, 255, 255, 0.901042) 52.64%, rgba(255, 255, 255, 0) 99.25%);
-  }
-  
-  .btn-gradient{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 26px;
-    /* identical to box height */
-
-    text-align: center;
-
-    cursor: pointer;
-    color: #FFFFFF;
-    text-align: center;
-
-    width: 167px;
-    height: 45px;
-    
-    border-width: 0px;
-    border-radius: 12px; 
-    box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
-
-    background-image: linear-gradient(to right, #00853B , #40C9A2);
-  }
-
-  /* mouse over button */
-  .btn-gradient:hover{
-    opacity: 80%;
-  }
-
-  /* selected button */
-  .btn-gradient:active{
-    background-image: linear-gradient(to right, #40C9A2, #A3F7B5);
-  }
-
-  .slide-caption{
-    left: 183px;
-    top: 198px;
-  }
-
-  .slide-caption .text{
-    margin-bottom: 40px;
-    width: 435px;
-    height: 162px;
-
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 54px;
-
-    color: #00853B;
-  }
-
-  .dot{
-    margin-top: 40px;
-    cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin-left: 12px;
-    background-color: #D9D9D9;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .dot-active{
-    background-color: #40C9A2;
-  }
-
-  .wave-container{
-    position: absolute;
-    z-index: 3;
-
-    width: 100%;
-    height: 486px;
-    top: 483px;
-  }
-
-  .wave-container img{
-    width: 100%;
-    display: block;
-  }
-
-  .text h1{
-    /* Heading 3 - M (Títulos) */
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-
-    letter-spacing: 0.1em;
-
-    color: #6B6B6B;  
-  }
-
-  .text p{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-
-    color: #6B6B6B;  
-  }
-
-  .wave-container .text p{
-    color: #FFFFFF;
-  }
-
-  .wave-container .text h1{
-    color: #DADADA;
-  }
-
-  .wave-container section{
-    position: absolute;
-    z-index: 5;
-    width: 526px;
-    height: 87px;
-    left: 183px;
-    top: 150px;
-  }
-
-  #decorator{
-    position: absolute;
-    z-index: 4;
-    width: 430px;
-    height: 430px;
-    left: 658px;
-    top: -10px;
-  }
-
-  .project-metrics{
-    margin: auto;
-    width: 1079px;
-    height: 433px;
-    margin-top: 400px
-  }
-
-  .metric-container{
-    padding: 10px;
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
-  }
-
-  .metric-item{
-    text-align: center;
-    width: 350px;
-    display: inline-block;
-  }
-
-  .metric-item h1{
-    font-size: 64px;
-    color: #6B6B6B;
-  }
-
-  .metric-item h2{
-    font-size: 20px;
-    color: #6B6B6B;;
-  }
-
-  .metric-item h3{
-    font-size: 14px;
-    color: #6B6B6B;
-  }
-
-  .metric-item span{
-    color: #00853B;
-  }
-
-  .divider{
-    display: inline-block;
-    text-align: center;
-    width: 2px;
-    height: 180px;
-
-    background: #00853B;
-  }
-
-  .content-cards{
-    margin: auto;
-    width: 1079px;
-    height: 433px;
-  
-    margin-bottom: 200px;
-  }
-
-  .card-container{
-    display: flex;
-    
-  }
-
-  .card-mask{
-    cursor: pointer;
-    display: inline-block;
-    margin: auto;
-    width: 255px;
-    height: 366px;
-    left: 180px;
-    top: 1698px;
-  }
-
-  .card-mask:hover{
-    opacity: 80%;
-  }
-
-  .card-mask img{
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    backdrop-filter: blur(12px);
-    /* Note: backdrop-filter has minimal browser support */
-  }
-
-  .card-gradient{
-    position: absolute;
-
-    width: 263px;
-    height: 106px;
-
-    margin-top: -106px;
-
-    background: linear-gradient(180deg, rgba(0, 133, 59, 0) 0%, #00853B 100%);
-    border-radius: 0px 0px 16px 16px;
-  }
-
-  .card-text{
-    font-family: 'Poppins', sans-serif;
-    width: 186px;
-    height: 72px;
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-
-    margin: 24px 17px 17px 46px;
-
-    color: #FFFFFF;
-  }
 
 </style>
 
 <script>
 export default {
   name: 'PaginaInicial',
-  /*props: {
-    msg: String
-  }*/
 }
 
 </script>

@@ -18,7 +18,7 @@ Primary use:
 /*------------------------------------------------------------------
 [COLOR CODES]
 
-# Text Color      :  
+# Text Color      :  #00853B
 # Primary Color 01:  
 # Primary Color 02:   
 # Primary Color 03:  
@@ -27,10 +27,10 @@ Primary use:
 /*------------------------------------------------------------------
 [TYPOGRAPHY]
 
-Body            : 16px/1.6 '', Arial, sans-serif;
-Title           : 18px/1.6 '', Arial, sans-serif;
-Paragrap        : 18px/1.6 '', Arial, sans-serif;
-Input, textarea : 14px/1.6 '', Arial, sans-serif;
+Body            : ??px/?.? '', SOMEFONTE, sans-serif;
+Title           : ??px/?.? '', SOMEFONTE, sans-serif;
+Paragrap        : ??px/?.? '', SOMEFONTE, sans-serif;
+Input, textarea : ??px/?.? '', SOMEFONTE, sans-serif;
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 Table of contents
@@ -44,52 +44,155 @@ Table of contents
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
-    font-family: Poppins-Regular;
-    src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
-  }
-  
-  @font-face {
-    font-family: Poppins-Light;
-    src: url('../fonts/Poppins/Poppins-Light.ttf'); 
-  }
-  
-  @font-face {
-    font-family: Poppins-ExtraLight;
-    src: url('../fonts/Poppins/Poppins-ExtraLight.ttf'); 
-  }
-  
-  @font-face {
-    font-family: Poppins-Medium;
-    src: url('../fonts/Poppins/Poppins-Medium.ttf'); 
-  }
-  
-  @font-face {
-    font-family: Poppins-Italic;
-    src: url('../fonts/Poppins/Poppins-Italic.ttf'); 
-  }
-  
-  @font-face {
-    font-family: Poppins-Bold;
-    src: url('../fonts/Poppins/Poppins-Bold.ttf'); 
-  }
-  
-  @font-face {
-    font-family: Poppins-SemiBold;
-    src: url('../fonts/Poppins/Poppins-SemiBold.ttf'); 
-  }
-  
-  
-  /*---------------------------------------------*/
-  @font-face {
-    font-family: PlayfairDisplay-Regular;
-    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf'); 
-  }
-  
-  @font-face {
-    font-family: PlayfairDisplay-Bold;
-    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf'); 
-  }
-  
-  /*---------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+h1, p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+
+    line-height: 100%;
+  }
+
+.navbar .nav-item .nav-link, .btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+
+    line-height: 100%;
+  }
+
+main h1{
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+  font-size: 1.5rem;
+  /* identical to box height */
+  font-weight: 500;
+  letter-spacing: 0.1em;
+
+  color: rgba(0, 0, 0, 0.54);
+  text-transform: uppercase;
+}
+
+#metricas h2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 96px;
+  /* identical to box height */
+
+
+  color: #6B6B6B;
+}
+
+#metricas p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-align: justify;
+
+  color: #6B6B6B;
+}
+
+footer h5{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 42px;
+  /* identical to box height */
+
+
+  color: #00853B;
+
+}
+
+/*---------------------------------------------*/
+
+/*//////////////////////////////////////////////////////////////////
+[ GENERAL ]*/
+
+/* Gradient */
+.gradient-custom {
+  background: #00853B;
+  background: -webkit-linear-gradient(100.22deg, #00853B 0%, #40C9A2 100%);
+  background: linear-gradient(100.22deg, #00853B 0%, #40C9A2 100%);
+}
+
+/* Buttons */
+.btn, .btn:hover {
+  line-height: 1.5rem;
+  color: #FFFBFB;
+  text-transform: capitalize;
+}
+
+/* .btn-rounded {
+  border-radius: 8px;
+} */
+
+/*//////////////////////////////////////////////////////////////////
+[ NAVBAR ]*/
+/* General settings*/
+.navbar{
+  color: #FFFFFF;
+  box-shadow: 0px!important;
+  border-bottom: 4px solid #40C9A2;
+}
+
+/* Text color */
+.navbar .nav-item .nav-link:hover, footer .list-unstyled li a:hover { color: #00853B!important; } 
+.navbar .nav-item .nav-link:focus, footer .list-unstyled li a:focus { color: #4DC9A2!important; } 
+.navbar .nav-item .nav-link:active, footer .list-unstyled li a:active { color: #316B3C!important;} 
+.navbar .nav-item .nav-link:visited, footer .list-unstyled li a{ color: #00853B!important; }
+
+/*//////////////////////////////////////////////////////////////////
+[ FOOTER ]*/
+/* General settings*/
+
+.custom-footer{
+  color: #FFFFFF;
+  box-shadow: 0px!important;
+  border-top: 4px solid #40C9A2;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ PáginaInicial ]*/
+/* General settings*/
+
+.project-metrics{
+  background: #FFFFFF;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+
+.card-hover-overlay:hover{
+  cursor: pointer;
+  background: linear-gradient(
+        45deg,
+        rgba(0, 133, 59, 0.5),
+        rgba(64, 201, 162, 0.5) 100%);
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ INPUTS ]*/
+/* General settings*/
+
+.form-outline input, .form-outline input:focus {
+  border: 1px solid rgba(206, 206, 206, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.form-outline input:focus {
+  border: 1px solid rgba(206, 206, 206, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
